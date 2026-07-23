@@ -366,10 +366,6 @@
     font-weight: bolder;
 }
 
-#subsubb2 {
-   
-    
-}
 
 
 .bolder {
@@ -417,7 +413,7 @@
   justify-content: space-around;
   gap: 20px;
   flex-wrap: wrap;
-  margin: 0px 500px;
+  margin: 0px 200px;
 }
 
 .footer-col {

@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: google sans;
+
+  
+}
+
+/* DRY Method - Don't repeat yourself */
+
+/* NAVIGATION ON TOP */
+#navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 50px 300px;   
+}
+
+#navbar-left,
+#navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navlink {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.navlink:hover {
+    color: blueviolet;
+    transform: scale(0.90);
+}
+
+/* BIG SENTENCE ON TOP */
+
+#word1 {
+    text-align: center;
+    font-size: 65px;
+    padding: 25px 400px;
+    font-weight: 700;
+}
+
+/* THE SMALL DESCRIPTION NEXT ON BIG TEXT */
+
+#word2 {
+    text-align: center;
+    font-size: 18px;
+    padding: 1px 400px;
+}
+
+/* GET STARTED AND FIND YOUR PLAN BUTTON, TO FLEX AND POSITION*/
+
+.buttonposition {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* CLASS FOR BUTTONS INSIDE A DIV ONLY*/
+.button {
+
+    background-color: blueviolet; 
+    padding: 15px;        /* Space inside button */
+    border: none;              /* Remove default border */
+    border-radius: 6px;        /* Rounded corners */
+    font-size: 18px;           /* Text size */
+    cursor: pointer;           /* Pointer on hover */
+    
+}
+
+/* CLASS FOR BUTTONS TO TARGET THE LINK, TO REMOVE UNDERLINE*/
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* FOR BUTTON 1 RIGHT ONLY */
+#button1right {
+    background-color: white;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+}
+
+#button1right a {
+    color: blueviolet;
+}
+
+/* BIG PICTURE */
+
+#img1 {
+    max-width: 800px;
+    height: auto;
+    padding: 50px;
+    display: block;       /* Make image a block element */
+    margin-left: auto;    /* Auto margins center it */
+    margin-right: auto;
+    border-radius: 80px;
+}
+
+/* 5 buttons on page 1 bottom */
+
+.smallb {
+    background-color: white;
+    border: 1px solid blueviolet;
+    border-radius: 100px;
+    padding: 4px 15px;
+    cursor: pointer;
+    background-color: none;
+}
+
+.smallb a {
+    text-decoration:none;
+    color:blueviolet;
+    font-size:15px;
+    font-weight:bold;
+}
+
+.photo-band {
+  position: relative;
+  width: 100%;
+  height: 1500px; /* adjust vertical coverage here */
+  background-image: url('https://images.pexels.com/photos/7135028/pexels-photo-7135028.jpeg');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  overflow: hidden;
+  padding:80px 40px;
+  color: white;
+  margin-top:45px;
+}
+
+.header {
+    text-align: center;
+    font-size: 60px;
+    padding: 60px 500px 20px;
+}
+
+.subheader {
+    text-align: center;
+    padding: 20px 540px;
+}
+
+#s2buttons {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 40px;
+    margin: 40px 100px;
+}
+
+#s2buttons a {
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 23px;
+    background-color: white;
+    padding: 12px 20px;
+    border-radius: 100px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+
+.devider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px;
+    flex-wrap: wrap;   
+}
+
+#secondsectionpic {
+    height: 600px;
+    width: 600px;
+    justify-content: center;
+
+}
+
+.secondsectionpic {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.secondsectionpic img {
+  max-width: 100%;
+  border-radius: 80px;
+  
+}
+
+#s2header {
+    padding:60px 100px 20px;
+}
+
+#sau {
+    text-decoration: none;
+    margin:60px 100px 0px;
+}
+
+.devider2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.s2left {
+    flex: 1;
+    min-width: 200px;
+}
+
+.s2right {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    margin: 0px 100px;
+}
+
+.s2right img {
+    max-width: 90%;
+
+}
+
+.p1 {
+    margin-left: 300px;
+    color: blueviolet;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 19px;
+}
+.p2 {
+    margin-left: 300px;
+    margin-bottom: 10px;
+}
+.p3 {
+    text-decoration: none;
+    margin-left: 300px;
+    
+}
+.p4 {
+    margin-left: 300px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.p5 {
+    margin-left: 300px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+.p6 {
+    margin-left: 260px;
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.p7 {
+    margin-left: 260px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-right: 300px;
+}
+
+#p7special {
+    margin-bottom: 1px;
+}
+    
+
+.p8 {
+    margin-left: 260px;
+    margin-bottom: 20px;
+    margin-right: 300px;
+    font-weight:lighter;
+}
+
+.ceo {
+    font-weight: bold;
+}
+
+#subheader2 {
+    margin-top: 100px;
+}
+
+
+#b1 {
+    text-align: center;
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#bottom4 {
+    display: flex;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+
+.photo-band2 {
+    position: relative;
+    width: 100%;
+    height: 800px; /* adjust vertical coverage here */
+    background-image: url('https://images.pexels.com/photos/7135028/pexels-photo-7135028.jpeg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    overflow: hidden;
+    padding:80px 40px;
+    color: white;
+    margin-top:45px;
+}
+
+#bottomlast {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.stat {
+    color: aqua;
+    font-size: 110px;
+}
+
+.stattext {
+    color: whitesmoke;
+    font-size: 30px;
+    padding: 18px;
+}
+
+#headerb2 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#subheaderb2{
+    display: flex;
+    justify-content:space-evenly;
+    text-align:center;
+}
+
+#subsubb2 p {
+    text-align: left;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+#subsubb2 {
+   
+    
+}
+
+
+.bolder {
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+#last {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.photo-band3 {
+    position: relative;
+    width: 100%;
+    height: 500px; /* adjust vertical coverage here */
+    background-image: url('https://images.pexels.com/photos/7135028/pexels-photo-7135028.jpeg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    overflow: hidden;
+    padding:80px 40px;
+    color: white;
+    margin-top:45px;
+}
+
+.footer {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 40px;
+  display: flex;
+  gap: 40px;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.footer-columns {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0px 500px;
+}
+
+.footer-col {
+  min-width: 140px;
+}
+
+.footer-col h4 {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+  color: black;
+}
+
+.footer-col a {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  text-decoration: none;
+  margin-bottom: 14px;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+.footer-col-group {
+  margin-bottom: 32px;
+}
+
+
+
+
+#subinside {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+}
+
+.supersub1 {
+    align-items: center;
+    justify-content: right;
+    text-align: right;
+    font-size: 80px;
+    font-weight: bolder;
+
+}
+
+#supersub2 {
+    align-items: center;
+    justify-content: right;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 25px;
+    padding-bottom: 100px;
+}
+
+.supersub21 {
+    padding-top: 35px;
+    padding-bottom: 40px;
+
+} 

@@ -5,8 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: google sans;
-    
-  
+    scroll-behavior: smooth;
 }
 
 /* DRY Method - Don't repeat yourself */

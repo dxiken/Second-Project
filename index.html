@@ -11,7 +11,7 @@
 <body>
     
 <!-- NAVIGATION ON TOP -->
-    <nav id="navbar-top"> 
+    <nav id="navbar-top" class="stickyfunc"> 
         <div id="navbar-left"> 
             <a href="https://www.google.com" class="navlink">Features</a>
             <a href="https://www.google.com" class="navlink">Solution</a>
@@ -22,8 +22,8 @@
 
         <div id="navbar-right">
             <a href="https://www.google.com" class="navlink">Sign in</a>
-            <a href="https://www.google.com" class="navlink">REQUEST A DEMO</a>
-            <a href="https://www.google.com" class="navlink">GET STARTED</a>
+            <a id="rad" href="https://www.google.com" class="navlinks">REQUEST A DEMO</a>
+            <a id="gs" href="https://www.google.com" class="navlinks">GET STARTED</a>
         </div>
     </nav>   
 
@@ -42,7 +42,7 @@
         <div class="button" id="button1left">
             <a href="https://www.google.com">GET STARTED</a>
         </div>
-        <div class="button" id="button1right">
+        <div class="button1" id="button1right">
             <a href="https://www.google.com">FIND YOUR PLAN</a>
         </div>
     </div>
@@ -88,10 +88,9 @@
                     <a href="">Review code with Github Copilot</a>
                     <a href="">Lookup customer data in Agentforce</a>
                 </div>
-           
-                <div class="secondsectionpic">
-                    <img src="https://images.pexels.com/photos/7988219/pexels-photo-7988219.jpeg" alt="secondsectionpic">
-                </div>
+                    <div class="secondsectionpic">
+                        <img src="https://images.pexels.com/photos/7988219/pexels-photo-7988219.jpeg" alt="secondsectionpic">
+                    </div>
             </div>
     </div>
     
@@ -112,94 +111,104 @@
         </div>
     </div>
 
-    <div>
-        <h1 class="header"   >Give everyone instant context.</h1>
-        <p class="subheader" >Get access to every file, decision, and conversation, so you can build on past work instead of recreating it.</p>
-    </div>
-
-
-    <div class="devider2">
-        <div class="s2left">
-            <p class="p1" >Meet Slackbot: Your pesonal agent for work.</p>
-            <p class="p2" >Slackbot isn't just any AI. It's AI that knows you and your team. It coordinates work across your apps and agents so one conversation gets work done.</p>
-            <a class="p3" href="https://www.google.com">Learn more about Slackbot ➜</a>
-            <p class="p4" >One search to rule them all.</p>
-            <p class="p5" >Bring CRM data to the conversation</p>
-            <p class="p6" >97 min</p>
-            <p class="p7" >average time users can save weekly with AI in Slack</p>
+    <div class="tab-sticky-wrapper">
+        <div class="tabposition">
+            <div class="tabnav">
+                <a href="#" class="tab active">Knowledge</a>
+                <a href="#" class="tab">People</a>
+                <a href="#" class="tab">Process</a>
+                <a href="#" class="tab">Platform</a>
+            </div>
         </div>
-        <div class="s2right">
-            <img src="https://a.slack-edge.com/c3ea545/marketing/img/homepage/revamped-25/carousels/img-meet-slackbot.png" alt="whaha">
+
+        <div>
+            <h1 class="header"   >Give everyone instant context.</h1>
+            <p class="subheader" >Get access to every file, decision, and conversation, so you can build on past work instead of recreating it.</p>
+        </div>
+
+
+        <div class="devider2">
+            <div class="s2left">
+                <p class="p1" >Meet Slackbot: Your pesonal agent for work.</p>
+                <p class="p2" >Slackbot isn't just any AI. It's AI that knows you and your team. It coordinates work across your apps and agents so one conversation gets work done.</p>
+                <a class="p3" href="https://www.google.com">Learn more about Slackbot ➜</a>
+                <p class="p4" >One search to rule them all.</p>
+                <p class="p5" >Bring CRM data to the conversation</p>
+                <p class="p6" >97 min</p>
+                <p class="p7" >average time users can save weekly with AI in Slack</p>
+            </div>
+            <div class="s2right">
+                <img src="https://a.slack-edge.com/c3ea545/marketing/img/homepage/revamped-25/carousels/img-meet-slackbot.png" alt="whaha">
+            </div>
+        </div>
+        
+
+        <div>
+            <h1 class="header" id="subheader2" >Let your people connect like poeple.</h1>
+            <p class="subheader" >Slack’s conversational UI makes collaborating more approachable, whether you're working with a colleague or an agent.</p>
+        </div>
+
+
+        <div class="devider2">
+            <div class="s2left">
+                <p class="p1" >It all starts with a channel.</p>
+                <p class="p2" >Channels are flexible, transparent spaces for working with your team, AI assistants, and agents.</p>
+                <a class="p3" href="https://www.google.com">Learn more about Slackbot ➜</a>
+                <p class="p4" >When talking is easier than typing…</p>
+                <p class="p5" >Bring Cconversation out of the inbox.</p>
+                <p class="p7" id="p7special" >ANTHROP\C</p>
+                <p class="p8">“Slack has been essential to our growth, our speed, and our ability to stay aligned as we scale”</p>
+                <p class="p8"><span class="ceo">Kate Jenson,</span> Head of Americas, Anthropic</p>
+            </div>
+            <div class="s2right">
+                <img src="https://a.slack-edge.com/5cb5052/marketing/img/homepage/revamped-25/carousels/img-people-1.png" alt="whaha">
+            </div>
+        </div>
+
+
+
+        <div>
+            <h1 class="header" id="subheader2" >Manage all your work from one place.</h1>
+            <p class="subheader" >Automate daily stand-ups, project updates, and approvals so your team can focus on growth instead of guesswork.</p>
+        </div>
+
+        <div class="devider2">
+            <div class="s2left">
+                <p class="p1" >Anyone can automate in Slack.</p>
+                <p class="p2" >By click or by code, Slack makes it easy for anyone to build time-saving automations of their own.</p>
+                <a class="p3" href="https://www.google.com">Learn more about channels ➜</a>
+                <p class="p4" >Manage projects and task.</p>
+                <p class="p5" >A simplier way to get started.</p>
+                <p class="p6" >35%</p>
+                <p class="p7" >increase in time saved due to automations for Slack users</p>
+            </div>
+            <div class="s2right">
+                <img src="https://a.slack-edge.com/5cb5052/marketing/img/homepage/revamped-25/carousels/img-process-2.png" alt="whaha">
+            </div>
+        </div>
+
+        <div>
+            <h1 class="header" id="subheader2" >Secure. Scaleable. Silo-free.</h1>
+            <p class="subheader" >Our flexible, open platform is purpose-built for bringing the best agents and AI to every business, and can be tailored to fit however your teams work best.</p>
+        </div>
+
+
+        <div class="devider2">
+            <div class="s2left">
+                <p class="p1" >From atlassian to Zoom.</p>
+                <p class="p2" >Google Drive. ChatGPT. Vercel. Box. Asana. Workday. You name it, it works in Slack.</p>
+                <a class="p3" href="https://www.google.com">See all integrations ➜</a>
+                <p class="p4" >Customize Slack to fit your needs.</p>
+                <p class="p5" >Work without worry.</p>
+                <p class="p7" id="p7special" >Vercel</p>
+                <p class="p8">“Work starts in conversation. That’s why we see Slack as the natural place to build our agents.”</p>
+                <p class="p8"><span class="ceo">Guillermo Rauch,</span> CEO Vercel</p>
+            </div>
+            <div class="s2right">
+                <img src="https://a.slack-edge.com/5cb5052/marketing/img/homepage/revamped-25/carousels/img-platform-1.png" alt="whaha">
+            </div>
         </div>
     </div>
-    
-
-     <div>
-        <h1 class="header" id="subheader2" >Let your people connect like poeple.</h1>
-        <p class="subheader" >Slack’s conversational UI makes collaborating more approachable, whether you're working with a colleague or an agent.</p>
-    </div>
-
-
-    <div class="devider2">
-        <div class="s2left">
-            <p class="p1" >It all starts with a channel.</p>
-            <p class="p2" >Channels are flexible, transparent spaces for working with your team, AI assistants, and agents.</p>
-            <a class="p3" href="https://www.google.com">Learn more about Slackbot ➜</a>
-            <p class="p4" >When talking is easier than typing…</p>
-            <p class="p5" >Bring Cconversation out of the inbox.</p>
-            <p class="p7" id="p7special" >ANTHROP\C</p>
-            <p class="p8">“Slack has been essential to our growth, our speed, and our ability to stay aligned as we scale”</p>
-            <p class="p8"><span class="ceo">Kate Jenson,</span> Head of Americas, Anthropic</p>
-        </div>
-        <div class="s2right">
-            <img src="https://a.slack-edge.com/5cb5052/marketing/img/homepage/revamped-25/carousels/img-people-1.png" alt="whaha">
-        </div>
-    </div>
-
-
-
-     <div>
-        <h1 class="header" id="subheader2" >Manage all your work from one place.</h1>
-        <p class="subheader" >Automate daily stand-ups, project updates, and approvals so your team can focus on growth instead of guesswork.</p>
-    </div>
-
-    <div class="devider2">
-        <div class="s2left">
-            <p class="p1" >Anyone can automate in Slack.</p>
-            <p class="p2" >By click or by code, Slack makes it easy for anyone to build time-saving automations of their own.</p>
-            <a class="p3" href="https://www.google.com">Learn more about channels ➜</a>
-             <p class="p4" >Manage projects and task.</p>
-            <p class="p5" >A simplier way to get started.</p>
-            <p class="p6" >35%</p>
-            <p class="p7" >increase in time saved due to automations for Slack users</p>
-        </div>
-        <div class="s2right">
-            <img src="https://a.slack-edge.com/5cb5052/marketing/img/homepage/revamped-25/carousels/img-process-2.png" alt="whaha">
-        </div>
-    </div>
-
-     <div>
-        <h1 class="header" id="subheader2" >Secure. Scaleable. Silo-free.</h1>
-        <p class="subheader" >Our flexible, open platform is purpose-built for bringing the best agents and AI to every business, and can be tailored to fit however your teams work best.</p>
-    </div>
-
-
-    <div class="devider2">
-        <div class="s2left">
-            <p class="p1" >From atlassian to Zoom.</p>
-            <p class="p2" >Google Drive. ChatGPT. Vercel. Box. Asana. Workday. You name it, it works in Slack.</p>
-            <a class="p3" href="https://www.google.com">See all integrations ➜</a>
-            <p class="p4" >Customize Slack to fit your needs.</p>
-            <p class="p5" >Work without worry.</p>
-            <p class="p7" id="p7special" >Vercel</p>
-            <p class="p8">“Work starts in conversation. That’s why we see Slack as the natural place to build our agents.”</p>
-            <p class="p8"><span class="ceo">Guillermo Rauch,</span> CEO Vercel</p>
-        </div>
-        <div class="s2right">
-            <img src="https://a.slack-edge.com/5cb5052/marketing/img/homepage/revamped-25/carousels/img-platform-1.png" alt="whaha">
-        </div>
-    </div>
-
     <div>
         <p id="b1">The most innovative companies run their business in Slack.</p>
     </div>
@@ -287,7 +296,11 @@
         <div id="subsubb2">
             <p>Don't just take our word for it.</p>
             <p>Slack is a leader in over 303 G2 market reports.</p>
+            <div>
+            <img id="rewards" src="rewards.png" alt="hehe">
+         </div>
         </div>
+         
      </div>
 
      <div id="last">
@@ -426,6 +439,40 @@
 
         </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="checkbox" id="cookie-toggle" class="cookie-toggle">
+
+<div class="cookie-banner">
+    <p class="cookie-text">
+        This website uses cookies to enhance user experience and to analyze performance and traffic on our website. We also share information about your use of our site with our social media, advertising and analytics partners. <a href="#">More Info</a>
+    </p>
+    <div class="cookie-buttons">
+        <label for="cookie-toggle" class="cookie-btn accept">ACCEPT ALL COOKIES</label>
+        <label for="cookie-toggle" class="cookie-btn settings">COOKIES SETTINGS</label>
+    </div>
+    <label for="cookie-toggle" class="cookie-close">✕</label>
+</div>
+
+
+
+
+
 
 </body>
 </html>
